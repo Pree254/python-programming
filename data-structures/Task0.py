@@ -14,6 +14,7 @@ def print_all_int(list):
 print_all_int([1, 2, 3, 4, 5])
 
 
+
 #Task1
 
 #Python function that retrieves an element from a list.
@@ -29,6 +30,41 @@ def el_at_list(list,idx):
         return list[idx]
 
 print(el_at_list([-1, -2, -3],3))
+
+#Task 2
+#Python function that replaces an element of a list at a specific position.
+#If idx is negative or out of range (greater than the number of elements in my_list), the function
+#returns the original list.
+#Without importing modules or using try/except.
+
+def replace_el_at_list(list,idx,new_el):
+    my_list_len = len(list)
+    if idx >= my_list_len or idx < 0:
+        return list
+    else: 
+        list[idx] = new_el
+        return list
+
+my_list_3= [50,90,120]
+my_list_3[0]=60
+print(my_list_3)
+
+print(replace_el_at_list(my_list_3,5,150))
+
+# Task 5
+# Python function that deletes an item at a specific position in a list.
+# If idx is negative or out of range (greater than the number of elements in my_list), the function
+# returns the original list.
+# Without importing modules or using pop().
+
+def del_el_at_list(list,idx):
+    my_list_len = len(list)
+    if idx >= my_list_len or idx < 0:
+        return list
+    else: 
+        del list[idx] 
+        return list
+print(del_el_at_list([2, 4, 6, 8],1))
 
 #Task6
 #Python function that returns a set of common elements in two sets.

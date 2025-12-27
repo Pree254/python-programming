@@ -30,6 +30,25 @@ def el_at_list(list,idx):
 
 print(el_at_list([-1, -2, -3],3))
 
+#Task6
+#Python function that returns a set of common elements in two sets.
+#Without importing modules.
+
+def common_elements_in_two_sets(set_a, set_b):
+    return set_a.intersection(set_b)
+
+print(common_elements_in_two_sets({1, 10, 11}, {1, 11, 15}))
+
+#Task 7
+#Python function that returns a set of all elements present in only one set.
+#Without importing modules.
+
+def unique_elements_in_two_sets(set_a, set_b):
+    return set_a.symmetric_difference(set_b)
+print(unique_elements_in_two_sets({1, 10, 11}, {1, 11, 15}))
+
+
+
 #Task8
 #Python function that returns the number of keys in a dictionary.
 #Without importing modules.

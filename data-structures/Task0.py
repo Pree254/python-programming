@@ -47,6 +47,7 @@ def no_of_keys_in_dict(dict):
 print("no of keys in presidents_of_ke: ", no_of_keys_in_dict(presidents_of_ke))
 
 #Task 10
+
 #Python function that replaces or adds key/value pairs in a dictionary.
 #The parameter key is always a string.
 #The parameter value is any type.
@@ -65,3 +66,23 @@ def update_values_in_dict(dict, key, value):
     return dict
 
 print(update_values_in_dict(colors_of_rainbow,"Color 5", "Violet"))
+
+#Task 11
+
+#Python function that deletes a key in a dictionary.
+#The paramter key is always a string.
+#If the key does not exist, the dictionary does not change.
+#Without importing modules.
+
+colors_of_rainbow = {
+    "Color 1": "Red",
+    "Color 2": "Orange",
+    "Color 3": "Yellow",
+    "Color 4": "Green"
+}
+
+def del_key_in_dict(dict, key):
+    if key in dict:
+        del dict[key]
+    return dict
+print(del_key_in_dict(colors_of_rainbow, "Color 4"))

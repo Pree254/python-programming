@@ -29,3 +29,19 @@ def el_at_list(list,idx):
         return list[idx]
 
 print(el_at_list([-1, -2, -3],3))
+
+#Task8
+#Python function that returns the number of keys in a dictionary.
+#Without importing modules.
+
+presidents_of_ke = {
+    "First President": "Mzee Jomo Kenyatta",
+    "Second President": "Daniel Arap Moi",
+    "Third President": "Mwai Kibaki",
+    "Fourth President": "Uhuru Kenyatta",
+    "Fifth President": "William Ruto",
+}
+
+def no_of_keys_in_dict(dict):
+    return len(dict.keys())
+print("no of keys in presidents_of_ke: ", no_of_keys_in_dict(presidents_of_ke))

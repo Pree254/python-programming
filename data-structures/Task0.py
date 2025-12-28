@@ -9,8 +9,8 @@
 # The user is expected to pass in only a list of integers
 
 def print_all_int(list):
-    for int in list:
-        print(int)
+    for my_int in list:
+        print(my_int)
 print_all_int([1, 2, 3, 4, 5])
 
 
@@ -18,9 +18,9 @@ print_all_int([1, 2, 3, 4, 5])
 #Task1
 
 #Python function that retrieves an element from a list.
-#If idx is negative or out of range (greater than the number of elements in my_list), the function
-#returns None.
-#Without importing modules or using try/except.
+#If idx is negative or out of range (greater than the number of elements in my_list), the function
+#returns None.
+#Without importing modules or using try/except.
 
 def el_at_list(list,idx):
     my_list_len = len(list)
@@ -33,9 +33,9 @@ print(el_at_list([-1, -2, -3],3))
 
 #Task 2
 #Python function that replaces an element of a list at a specific position.
-#If idx is negative or out of range (greater than the number of elements in my_list), the function
+#If idx is negative or out of range (greater than the number of elements in my_list), the function
 #returns the original list.
-#Without importing modules or using try/except.
+#Without importing modules or using try/except.
 
 def replace_el_at_list(list,idx,new_el):
     my_list_len = len(list)
@@ -53,9 +53,9 @@ print(replace_el_at_list(my_list_3,5,150))
 
 # Task 5
 # Python function that deletes an item at a specific position in a list.
-# If idx is negative or out of range (greater than the number of elements in my_list), the function
+# If idx is negative or out of range (greater than the number of elements in my_list), the function
 # returns the original list.
-# Without importing modules or using pop().
+# Without importing modules or using pop().
 
 def del_el_at_list(list,idx):
     my_list_len = len(list)
@@ -97,15 +97,15 @@ presidents_of_ke = {
     "Fifth President": "William Ruto",
 }
 
-def no_of_keys_in_dict(dict):
-    return len(dict.keys())
+def no_of_keys_in_dict(my_dict):
+    return len(my_dict.keys())
 print("no of keys in presidents_of_ke: ", no_of_keys_in_dict(presidents_of_ke))
 
 #Task 10
 
 #Python function that replaces or adds key/value pairs in a dictionary.
-#The parameter key is always a string.
-#The parameter value is any type.
+#The parameter key is always a string.
+#The parameter value is any type.
 #If a key exists in the dictionary, the value is replaced.
 #If a key does not exist in the dictionary, it is created.
 #Without importing modules.
@@ -116,16 +116,16 @@ colors_of_rainbow = {
     "Color 3": "Yellow",
     "Color 4": "Green"
 }
-def update_values_in_dict(dict, key, value):
-    dict[key] = value
-    return dict
+def update_values_in_dict(my_dict, key, value):
+    my_dict[key] = value
+    return my_dict
 
 print(update_values_in_dict(colors_of_rainbow,"Color 5", "Violet"))
 
 #Task 11
 
 #Python function that deletes a key in a dictionary.
-#The paramter key is always a string.
+#The paramter key is always a string.
 #If the key does not exist, the dictionary does not change.
 #Without importing modules.
 
@@ -136,8 +136,8 @@ colors_of_rainbow = {
     "Color 4": "Green"
 }
 
-def del_key_in_dict(dict, key):
-    if key in dict:
-        del dict[key]
-    return dict
+def del_key_in_dict(my_dict, key):
+    if key in my_dict:
+        del my_dict[key]
+    return my_dict
 print(del_key_in_dict(colors_of_rainbow, "Color 4"))
